@@ -1,0 +1,44 @@
+{% extends 'hello/main.html'%} {% block content %}
+
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <i class="fas fa-building"></i> my company
+    </a>
+  </div>
+</nav>
+<div
+  class="card"
+  style="
+    width: 1800px;
+    margin-top: 40px;
+    background-image: url('https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  "
+>
+  <div class="card-body" style="color: aliceblue">
+    <h5 class="card-title">About us</h5>
+    <p class="card-text" style="color: aliceblue">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, minima
+      nulla. Fuga sequi cum minus eligendi, autem labore qui magni facere
+      quaerat sed, atque porro facilis doloribus! Tempora, nam dolorum.
+    </p>
+    <a href="{% url 'secondPage' %}" class="btn btn-primary"
+      >request an appoinment
+    </a>
+    <div style="margin-left: 400px; margin-top: 60px">
+      <iframe
+        frameborder="0"
+        scrolling="no"
+        marginheight="0"
+        marginwidth="0"
+        width="356"
+        height="200"
+        type="text/html"
+        src="https://www.youtube.com/embed/u5V_VzRrSBI?autoplay=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
